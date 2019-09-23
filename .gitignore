@@ -1,3 +1,6 @@
+# Ignore custom settings
+custom.js
+
 # Logs
 logs
 *.log

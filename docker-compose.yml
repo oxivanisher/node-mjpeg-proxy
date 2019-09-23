@@ -1,0 +1,10 @@
+version: "3"
+services:
+  mjpeg-proxy:
+    container_name: node
+    restart: unless-stopped
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./custom.js:/app/proxy.js:ro
