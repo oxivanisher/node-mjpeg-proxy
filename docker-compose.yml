@@ -3,7 +3,8 @@ services:
   mjpeg-proxy:
     container_name: node
     restart: unless-stopped
-    build: .
+    image: ghcr.io/oxivanisher/node-mjpeg-proxy:master
+    # build: .
     ports:
       - "8080:8080"
     volumes:
