@@ -1,4 +1,4 @@
-FROM node:lts
+FROM node:lts-bookworm
 EXPOSE 8080
 WORKDIR /app
 RUN npm install express mjpeg-proxy
